@@ -1,16 +1,23 @@
-# UItorunPythonScripts
-Python Django Project to run python scripts from a frontend user Interface 
-
-**This is purely an academic project to learn how the Python server side scripts can run from a User interface at the frontend**
+**This project is primarily intended for academic purposes, aiming to explore the execution of Python server-side scripts via a frontend user interface.**
 
 SOFTWARE REQUIREMENTS
 
-● Python ● Bootstrap 5 ● Django ● HTML 5 ● CSS3  ● Visual Studio Code - Code Editor 
+● Python
+● Bootstrap 5
+● Django
+● HTML 5
+● CSS3
+● Visual Studio Code - Code Editor
 
-The front end has a minimal Home page with a button called 'Scripts'. When you click on Scripts , it will redirect to a seperate landing page for Script buttons . In this page,  you will see the buttons for your specific scripts . The footer and header are seperate HTML pages and can be added to other pages as needed . So for testing , I have three buttons in the landing page  'ARP script' - This will run an arp lookup in the backend and return the output to a well formatted HTML page , 'Port Scan' -This is a simple Python script to check for any open ports , 'FindMyIP' - This will find your public IP and return the output to an HTML page . 
+The frontend comprises a minimalist Home page featuring a button labeled 'Scripts'. Upon clicking on 'Scripts', users are redirected to a dedicated landing page for script execution. Here, specific script buttons are displayed. The header and footer are separate HTML pages and can be incorporated into other pages as required. For the purpose of testing, three buttons are provided on the landing page:
 
-You can directly write these Python scripts as functions in views.py and also instead of writing very large functions you can split it up with small ones  . For eg: for an arp lookup,  a simple function called 'get_arp' to do the lookup and then you can call this function from another function 'display_arp'. So whenever 'diplay_arp' is called as an 'action' it will call the get_arp first. The diplay_arp as a seperate function is needed to read the 'ARP' output properly and then render it to an HTML page .  This approach of splitting functions will be useful when you write large functions with lots of read/writes. 
+'ARP script': This button executes an ARP lookup in the backend and presents the output in a well-formatted HTML page.
+'Port Scan': Executes a simple Python script to check for open ports.
+'FindMyIP': Identifies the user's public IP and displays the output on an HTML page.
+The Python scripts can be implemented directly as functions in views.py. To enhance readability and maintainability, it is recommended to break down large functions into smaller ones. For instance, for an ARP lookup, a function named 'get_arp' can handle the lookup, which can then be called from another function, 'display_arp'. Thus, whenever 'display_arp' is invoked as an action, it initiates the 'get_arp' function first. Utilizing separate functions aids in effectively managing functions with extensive read/write operations.
 
-It needs a seperate HTML page for each script to render the script output in a formatted way , also seperate HTML pages are needed to handle errors. The urls.py should also be tweaked accordingly . 
+Each script requires a separate HTML page to present the output in a formatted manner, and dedicated HTML pages are essential for error handling. The urls.py file should be adjusted accordingly to accommodate these requirements.
+
+
 
 

@@ -1,7 +1,7 @@
 # UItorunPythonScripts
 Python Django Project to run python scripts from a frontend user Interface 
 
-**This is purely an academic project to learn how the Python server side scripts run from a User interface at the frontend**
+**This is purely an academic project to learn how the Python server side scripts can run from a User interface at the frontend**
 
 SOFTWARE REQUIREMENTS
 
